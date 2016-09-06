@@ -1,0 +1,19 @@
+<div class="container">
+	<div class="page-header" style="margin:0;">
+    	<h2>Relatório de Acessos</h2>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-4"><b>ID</b></div>
+		<div class="col-md-4"><b>URL</b></div>
+		<div class="col-md-4"><b>DATA</b></div>
+	</div>
+	<% @access.each do |acesso| %>
+	<div class="row">
+		<div class="col-md-4"><%= acesso.guid %></div>
+		<div class="col-md-4"><%= acesso.url %></div>
+		<div class="col-md-4"><%= acesso.date.strftime("%d/%m/%Y %H:%M:%S") %></div>
+	</div>
+	<% end %>
+</div>
