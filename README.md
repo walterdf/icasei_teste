@@ -28,5 +28,12 @@ Things you may want to cover:
 <br>http://www.mongodb.com/
 
 * <b>Configuration</b><br>
-I used the bundle to manage my gem to install run the command<br>
-<tt>$ gem install bundler</tt>
+I used the bundle to manage my gem, open a terminal and run this command<br>
+<tt>$ gem install bundler</tt><br>
+Second step: run this command in the application's root directory<br>
+<tt>$ bundle install</tt><br>
+Third step: edit file /config/mongoid.yml section hosts with address service mongodb<br>
+<tt>$ rails server --binding localhost</tt>
+
+* <b>How to run the test suite</b><br>
+<tt>$ rspec</tt>
